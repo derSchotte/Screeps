@@ -6,6 +6,8 @@ var roleBuilder = require('role.builder');
 var roleRepairer = require('role.repairer');
 var roleWallRepairer = require('role.wallRepairer');
 
+var Towers = require('tower');
+
 module.exports.loop = function () {
     for(let name in Memory.creeps) {
         if(Game.creeps[name] == undefined) {
